@@ -5,15 +5,14 @@ const cors = require('cors');
 
 
 
-const studmodel=require('./db')
-const scanRouter=require('./routes/scanRouter')
-const AdminRouter=require('./routes/adminRouter')
+const dbconfig=require('./db')
+const adminsRouter = require('./routes/adminRouter')
 
 app.use(cors());
 app.use(express.json())
 
-app.use('/api/scans', scanRouter)
-app.use('/api/admin', AdminRouter)
+app.use('/api/admins', adminsRouter ) 
+
 
 app.listen(3005,()=>
 
