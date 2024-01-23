@@ -7,14 +7,13 @@ const adminSchema=mongoose.Schema(
     name:{
         type:String,
         required:true
-    },g
+    },
 
     email:
     {
         type:String,
         required:true
     },
-
     password:
     {
         type:String,
