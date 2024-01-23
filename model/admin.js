@@ -7,7 +7,7 @@ const adminSchema=mongoose.Schema(
     name:{
         type:String,
         required:true
-    },
+    },g
 
     email:
     {
